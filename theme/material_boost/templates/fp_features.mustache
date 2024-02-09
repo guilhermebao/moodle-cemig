@@ -1,0 +1,43 @@
+{{#usefeaturedblocks}}
+<!-- ******featured BLOCKS****** --> 
+<div class="featured-section">
+    <div class="container">
+        <div class="row">
+            {{#featuredblocks}}
+            {{#hasblock}}
+            <div class="item col-12 col-md-6 col-lg-4">
+                <div class="item-inner">
+                    {{#blockimage}}
+                    <div class="thumb-holder">
+                        <img class="img-responsive" src="{{{blockimage}}}" alt="image">          
+                    </div><!--//thumb-holder-->
+                    {{/blockimage}}
+                    
+                    <div class="content-holder">
+                        {{#blocktitle}}
+                        <h4 class="featured-title">
+	                        {{#blockurl}}
+	                        <a href="{{{blockurl}}}">
+	                        {{/blockurl}}
+	                            {{{blocktitle}}}
+	                        {{#blockurl}}
+	                        </a>
+	                        {{/blockurl}}
+	                    </h4>
+                        {{/blocktitle}}
+                        {{#blockcontent}}
+                        <div class="intro">{{{blockcontent}}}</div><!--//intro-->
+                        {{/blockcontent}}
+                        {{#blockurl}}
+                        <a class="link" href="{{{blockurl}}}"></a> 
+                        {{/blockurl}}
+                    </div><!--//content-holder-->
+                </div><!--//item-inner-->
+            </div><!--//item-->
+            {{/hasblock}}
+           {{/featuredblocks}}
+        </div><!--//row-->
+    </div><!--//container-->
+</div><!--//featured-section-->
+{{/usefeaturedblocks}}
+

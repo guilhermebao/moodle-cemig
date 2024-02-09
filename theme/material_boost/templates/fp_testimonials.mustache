@@ -1,0 +1,64 @@
+{{#usetestimonials}}
+<!-- ******REVIEWS****** --> 
+<div class="reviews-section">
+    <div class="container text-center">
+	    <div class="reviews-section-inner">
+	        <div class="section-heading">
+	            {{#testimonialsectiontitle}}
+	            <h2 class="title">{{{testimonialsectiontitle}}}</h2>
+	            {{/testimonialsectiontitle}}
+	            {{#testimonialsectionintro}}
+	            <div class="intro">{{{testimonialsectionintro}}}</div>
+	            {{/testimonialsectionintro}}
+	        </div><!--//section-heading-->
+	        <div id="reviews-carousel" class="reviews-carousel carousel slide" data-ride="carousel">
+	            <!--//wrapper for slides -->
+	            <div class="carousel-inner" role="listbox">
+	                {{#testimonials}}
+				    {{#hastestimonial}}
+	                <div class="carousel-item item {{{itemclass}}}">
+	                    <blockquote class="review mx-auto">
+		                    {{#testimonialimage}}
+	                    <img class="rounded img-circle review-profile" src="{{{testimonialimage}}}" alt="image" /> 
+	                    {{/testimonialimage}}
+	                    
+	                        {{{testimonial}}}
+	                    </blockquote><!--//review-->
+	                    <div class="source">
+	                        {{#testimonialname}}
+	                        <div class="name">{{{testimonialname}}}</div>
+	                        {{/testimonialname}}
+	                        {{#testimonialmeta}}
+	                        <div class="meta">{{{testimonialmeta}}}</div>
+	                        {{/testimonialmeta}}
+	                    </div><!--//source-->    
+	                </div><!--//item-->
+	                {{/hastestimonial}}
+	                {{/testimonials}}
+	
+	            </div><!--//carousel-inner-->
+	            
+	            
+	            
+	          
+	            <!--//Indicators-->
+	            <ol class="carousel-indicators">
+	                {{#testimonials}}
+				    {{#hastestimonial}}
+	                <li class="{{{itemclass}}}" data-target="#reviews-carousel" data-slide-to="{{{indicatorcount}}}">
+	                    
+	                    
+	                </li>
+				    {{/hastestimonial}}
+				    {{/testimonials}}
+	            </ol><!--//carousel-indicators-->
+	            
+	        </div><!--//inner-->
+            
+        </div>
+    </div><!--//container-->
+</div><!--//reviews-section-->
+    
+{{/usetestimonials}}
+
+

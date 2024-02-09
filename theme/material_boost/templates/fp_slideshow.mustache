@@ -1,0 +1,39 @@
+{{#useheroslideshow}}    
+<!-- ******HERO****** --> 
+<div class="hero-section">
+    <div class="bg-slider-wrapper">
+        <div id="bg-slider" class="flexslider bg-slider">
+            <ul class="slides">
+	            {{#slideshow}}
+                {{#hasslide}}
+                <li class="slide slide-{{{slidecount}}}" style="display:none">
+                    <div class="slide-content container">
+                        <div class="slide-content-inner">
+                            {{#slideheading}}
+                            <h2 class="slide-heading">{{{slideheading}}}</h2>
+                            {{/slideheading}}
+                            {{#slideintro}}
+                            <div class="slide-intro">
+                                {{{slideintro}}}
+                            </div>
+                            {{/slideintro}}
+                            {{#slidebtn}}
+                            {{#slideurl}}
+                            <a class="btn btn-primary" href="{{{slideurl}}}" {{#urlopennew}}target="_blank"{{/urlopennew}} >
+	                        {{/slideurl}}
+	                           {{{slidebtn}}}
+	                        {{#slideurl}}
+	                        </a>
+	                        {{/slideurl}}
+                            {{/slidebtn}}
+                        </div><!--//slide-content-inner-->
+                    </div><!--//slide-content-->
+                </li>
+               {{/hasslide}}
+               {{/slideshow}}
+            </ul>
+        </div>
+    </div><!--//bg-slider-wrapper--> 
+            
+</div><!--//hero-section-->
+{{/useheroslideshow}}

@@ -1,0 +1,122 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    Page header.
+}}
+
+<header id="header" class="page-header navbar" role="banner">
+	<div class="top-bar">
+		<div class="container-fluid">
+			<div class="top-bar-inner">
+				
+		        
+		        
+
+	            <div class="special-wrapper navbar">
+					
+		            
+		            <div class="utilities">
+			            <div class="utilities-inner d-flex align-items-center">
+				            <div class="d-flex">
+				            <!-- search_box -->
+					        {{{ output.search_box }}}
+				            </div>
+					        <ul class="d-flex usernav p-0 ml-2 mb-0 align-items-center">
+						        <li class="d-flex mr-3">
+							        {{#langmenu}}
+							            {{> theme_boost/language_menu }}
+							        {{/langmenu}}
+							    </li>
+					            <!-- navbar_plugin_output -->
+					            <li class="d-flex mr-3">
+					                {{{ output.navbar_plugin_output }}}
+					            </li>
+					            <!-- user_menu -->
+					            <li class="d-flex">
+					                {{#usermenu}}
+						                {{> core/user_menu }}
+						            {{/usermenu}}
+					            </li>
+					        </ul><!--//user-nav-->
+					        
+					        {{{ output.edit_switch }}}
+					        
+			            </div><!--//utilities-inner-->
+		            </div><!--//utilities-->
+				</div>
+
+			</div><!--//top-bar-inner-->
+		</div>
+	</div><!--//top-bar-->
+	
+	<div class="branding">
+		<div class="container-fluid">
+			<div class="branding-inner">
+
+		        <h1 class="site-logo-wrapper">
+			        <a href="{{{ config.wwwroot }}}" class="site-name {{# output.site_logo }}has-logo{{/ output.site_logo }}">
+				        {{^ output.site_logo }}
+				           {{{ sitename }}}
+				        {{/ output.site_logo }}
+				        
+			            {{# output.site_logo }}
+	   
+			                <img class="site-logo" src="{{{ output.site_logo }}}" alt="{{sitename}}">
+	
+			            {{/ output.site_logo }}
+			        </a>
+		        </h1>
+		        
+		        <div class="header-contact d-none d-md-inline-block">
+					{{#output.header_phone}}
+					<div class="item phone">
+						<i class="fa fa-phone"></i>
+						{{{ output.header_phone }}}
+					</div>
+					{{/output.header_phone}}
+					{{#output.header_email}}
+					<div class="item email">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:{{{ output.header_email }}}">{{{ output.header_email }}}</a>
+					</div>
+					{{/output.header_email}}
+				</div><!--//header-contact-->
+			</div><!--//branding-inner-->
+			
+		</div><!--//container-->
+	</div><!--//branding-->
+
+</header><!--//header-->
+
+<div class="main-nav-wrapper">
+	<div class="container-fluid">
+		<div class="main-nav navbar navbar-expand">
+			<!-- custom_menu -->
+			{{#primarymoremenu}}
+		        {{> core/moremenu }}
+		    {{/primarymoremenu}}
+			<!-- page_heading_menu -->
+			{{{ output.page_heading_menu }}}
+		</div>
+	</div><!--//container-->
+</div><!--//main-nav-wrapper-->
+
+
+{{!--//moodle_validator (theme class function)--}}
+{{{ output.moodle_validator}}} 
+
+{{> theme_boost/primary-drawer-mobile }}

@@ -1,0 +1,546 @@
+/********* Frontpage *********/
+body.pagelayout-frontpage {	
+    background-color: #fff;
+    .container-fluid {
+	    max-width: 1140px;
+    }
+}
+/* ======= Hero Section ======= */
+.hero-section {
+    position: relative;
+     min-height: 460px;
+     margin-bottom: 45px;
+}
+
+.bg-slider-wrapper {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 460px;
+    background: $theme-text-color-primary;
+	    
+	/* Flexslider */
+	.flexslider {
+		@include border-radius(0);
+		padding: 0;
+		margin-bottom: 0;
+		border: none;
+		@include box-shadow(none);
+		overflow: hidden;
+	
+		.flex-direction-nav a {
+	    		color: #fff;
+	    		@include opacity(0.7);
+	    		@include border-radius(50%);
+	    		background: #333;
+	    		text-align: center;
+	    		width: 32px;
+	    		height: 32px;
+	    
+	    		&:before {
+	    			font-size: 18px;
+	    			text-shadow: none;
+	    			margin-bottom: 30px;
+	    			padding-top: 5px;
+	    			color: #fff;
+	    			text-shadow: none;
+	    		}
+	    		&:hover {
+	    			@include opacity(0.9);
+	    		}
+	    }
+    	.flex-control-nav {
+    		bottom: 15px;
+    	}
+    	.flex-control-paging {
+        	z-index:20;
+    		li {
+    			a {
+    				background: rgba(0, 0, 0, 0.4);
+    				&.flex-active {
+    					background: rgba(0, 0, 0, 0.75);
+    				}
+    			}
+    		}
+    	}
+	    
+
+        .slide {
+            display: block;
+            height: 460px;
+            
+        }
+        
+        .slide-content {
+            position: relative;
+            
+            .slide-content-inner {
+                position: absolute;
+                left: 15px;
+                top: 60px;
+                padding: 30px;
+                width: 420px;
+                background: #fff;
+                @include border-radius(2px);
+            }
+            
+            .slide-heading {
+                font-size: 26px;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+            .slide-intro {
+                line-height: 1.5;
+            }
+            .btn {
+                margin-top: 15px;
+            }
+        }
+
+    }
+}
+
+/* ====== Promo Section ======= */
+.promo-section {
+	margin-bottom: 45px;
+    .item {
+        margin-bottom: 30px;
+        
+    }
+    .item-inner {
+        position: relative;
+        @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.16));
+        @include border-radius(2px);
+        height: 220px;
+        padding-right: 180px;
+        &:hover {
+            @include box-shadow(0 8px 17px rgba(0, 0, 0, 0.2));
+        }
+        .link {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            &:hover {
+                background: rgba(0, 0, 0, 0.2);
+            }
+            
+        }
+    }
+    .promo-title {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .content-holder {
+        position: relative;
+        padding: 30px;
+        a {
+            color: rgba(0, 0, 0, 0.8);
+        }
+        
+    }
+    .user-profile {
+        float: left;
+        margin-right: 15px;
+    }
+    .thumb-holder {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 180px;
+        height: 100%;
+
+    }
+    .item-1 {
+        
+        .item-inner {
+            background: $color-green;
+            color: #fff;
+        }
+
+    }
+    .item-2 {
+        
+        .item-inner {
+            background: $color-teal;
+            color: #fff;
+        }
+    }
+    .item-3 {
+        
+        .item-inner {
+            background: $color-purple;
+            color: #fff;
+        }
+
+    }
+    .item-4 {
+        
+        .item-inner {
+            background: $color-blue;
+            color: #fff;
+        }
+
+    }
+    .item-5 {
+        
+        .item-inner {
+            background: $color-orange;
+            color: #fff;
+        }
+
+    }
+    .item-6 {
+        
+        .item-inner {
+            background: $color-pink;
+            color: #fff;
+        }
+
+    }
+}
+
+/* ======= Featured ======== */
+.featured-section {
+	margin-bottom: 45px;
+    .item {
+        margin-bottom: 30px;
+    }
+    .item-inner {
+        position: relative;
+        @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.16));
+        @include border-radius(2px);
+        border-top: 1px solid $theme-divider-color;
+        height: 100%;
+        
+        &:hover {
+            @include box-shadow(0 8px 17px rgba(0, 0, 0, 0.2));
+        }
+    }
+
+    .content-holder {
+        padding: 30px;
+        position: relative;
+        
+    }
+    .featured-title {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        a {
+	      color: $theme-text-color-primary;
+	      &:hover {
+		      color: $theme-color-primary;
+	      }  
+        }
+        
+    }
+    
+    .link {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: -23px;
+        @include border-radius(50%);
+        width: 46px;
+        height: 46px;
+        display: block;
+        background: $theme-color-primary url([[pix:theme|icon-arrow-right]]) no-repeat center center;
+        color: #fff;
+        @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, 0.16));
+        &:hover {
+            @include box-shadow(0 8px 10px rgba(0, 0, 0, 0.2));
+            background-color: lighten($theme-color-primary, 5%);
+        }
+    }
+    
+}
+
+
+
+/* ======= Reviews Section ======= */
+.reviews-section {
+
+    margin-bottom: 30px;
+    
+    .reviews-section-inner {
+	    background: $theme-color-primary;
+        color: #fff;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .review {
+        border-left: 0;
+        max-width: 800px;
+        margin-bottom: 30px;
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight:500;
+        }
+
+    }
+    
+    .review-profile {
+	    margin-bottom: 30px;
+    }
+    
+    .source {
+        .name {
+            font-size: 16px;
+            
+        }
+    }
+
+    .carousel-inner {
+        margin-bottom: 30px;
+    }
+    .carousel-indicators {
+	    position: static;
+        li {            
+            display: inline-block;
+            @include border-radius(50%);
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+            border: none;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background: #fff;
+                
+            }
+        }
+    }
+    
+
+}
+
+
+/* ======= CTA Section ======= */
+.cta-section {
+    background: $smoky-white;
+}
+.cta-section-inner {
+    padding: 45px 30px;
+    .cta-title {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    .cta-content {
+        font-size: 16px;
+        max-width: 680px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+    }
+}
+
+
+.pagelayout-frontpage #region-main > .card-block {
+	@extend %remove-card-box-shadow;
+}
+
+
+/* Moodle Output */
+.pagelayout-frontpage #region-main {
+	
+	margin-bottom: 30px;
+	
+    &> .card.card-block {
+	    min-height: inherit;
+	    background: none;
+		padding: 0;
+		border: none;
+    }
+
+}
+
+.pagelayout-frontpage .page-context-header{
+	display: none;
+}
+
+
+.coursebox {
+	border-bottom: 1px solid $theme-border-color;
+	padding: 15px;
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.coursebox>.info {
+	overflow: hidden;
+}
+.coursebox>.info>.coursename a {
+	padding-left: 30px;
+}
+
+.coursebox>.info>h3.coursename {
+	font-size: 20px;
+}
+
+.coursebox>.info .icon.fa-info {
+	position: relative;
+	top: 7px;
+}
+.coursebox .content .courseimage {
+	margin-top: 0;
+}
+
+.coursebox .content .summary, .coursebox .content .coursecat {
+	float: none;
+	width: auto;
+}
+.courses .coursebox.even {
+	background: #fff;
+}
+
+.coursebox .enrolmenticons {
+    margin-top: 5px;
+    float: right;
+    img.icon {
+	    width: 80px;
+	    height: auto;
+	    &[title="paypal"] {
+		    width: 60px;
+	    }
+    }
+}
+
+.pagelayout-frontpage .category .subcategories {
+	margin-left: 30px;
+}
+
+.course_category_tree .coursebox.odd {
+	background: #fff;
+}
+
+
+
+
+#frontpage-available-course-list, #frontpage-category-names, #site-news-forum, #frontpage-category-combo, #frontpage-course-list, .pagelayout-frontpage .generalbox.sitetopic{
+	margin-bottom: 45px;
+	border: 1px solid $theme-border-color;
+	@extend %card-box-shadow;
+	
+	&>h2 {
+		padding: 15px;
+		text-align: center;
+		font-size: 18px !important;
+		color: #fff;
+		background: $theme-color-primary;
+	}
+}
+
+.pagelayout-frontpage .generalbox.sitetopic {
+	&>h2 {
+		background: $theme-color-primary;
+	}
+}
+
+#frontpage-available-course-list {
+	&>h2 {
+		background: $color-light-blue;
+	}
+}
+
+#frontpage-course-list {
+	&>h2 {
+		background: $color-blue;
+	}
+}
+
+#site-news-forum {
+	&>h2 {
+		background: $color-light-green;
+	}
+}
+
+#frontpage-category-names {
+	&>h2 {
+		background: $color-teal;
+	}
+}
+
+#frontpage-category-combo {
+	&>h2 {
+		background: $color-indigo;
+	}
+}
+
+
+
+.pagelayout-frontpage .generalbox.sitetopic {
+	padding-top: 0 !important;
+	&> h2 + div {
+		padding: 15px;
+	}
+	.section-modchooser {
+		padding-right: 10px;
+	}
+}
+
+#frontpage-category-names, #frontpage-category-combo  {
+	.course_category_tree {
+		padding: 15px;
+	}
+}
+
+#site-news-forum {
+	.subscribelink {
+		padding: 15px 30px;
+	}
+	.forumaddnew {
+		padding: 0 30px;
+	}
+	article.relativelink {
+		border-bottom: 1px solid $theme-border-color;
+		padding: 15px;
+		&:last-child {
+			border-bottom:none;
+		}
+    }
+
+}
+
+#region-main {
+    #frontpage-available-course-list > h2, #frontpage-course-list > h2, #frontpage-category-names > h2, #frontpage-course-list > h2, #frontpage-category-combo > h2, #site-news-forum > h2 {;
+	    padding: 15px;
+	    text-align: center;
+		font-size: 18px !important;
+		color: #fff;
+	}
+}
+
+
+
+.pagelayout-frontpage #region-main .sitetopic > h2.sectionname {
+	padding: 15px;
+    text-align: center;
+	font-size: 18px !important;
+	color: #fff;
+}
+
+.pagelayout-frontpage #region-main .sitetopic ul.section {
+	text-align: left;
+}
+
+
+
+

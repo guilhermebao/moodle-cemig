@@ -1,0 +1,95 @@
+//REF: https://docs.moodle.org/dev/Boost_Presets
+
+/*************************** Variables section. *****************************/
+// Create variables to override the default value for variables used in the Moodle and Bootstrap SCSS files.
+
+
+/*************************** Import section  *****************************/
+// Always the same.
+// Import FontAwesome.
+@import "../../boost/scss/fontawesome";
+
+// Import All of Bootstrap
+@import "../../boost/scss/bootstrap";
+
+// Import Core moodle CSS
+@import "../../boost/scss/moodle";
+
+
+/*************************** Rules section ****************************/
+/* Theme Colour Custom Settings (defined in settings.php and lib.php) */
+//Green
+$theme-color-primary: #FF9800 !default; 
+
+/* Theme Colours */
+$theme-color-counter: #f66754;
+$theme-color-new: #5ab66e;
+$theme-color-alert: #ffb22b;
+$theme-text-color-primary: #272c33;
+$theme-text-color-secondary: lighten($theme-text-color-primary, 15%);
+$theme-text-color-light: #a2a6ad;
+$theme-text-color-grey: lighten($theme-text-color-primary, 30%);
+$theme-bgcolor: #eef2f8;
+$theme-border-color:  #eee;
+$theme-divider-color: #eee;
+$smoky-white: #f1f3f4;
+
+
+$light-grey: #ccc;
+$black: #000;
+$darker-grey: #666;
+$grey: #999;
+
+
+$google-color: #d73d32;
+$facebook-color: #3b5998;
+$microsoft-color: #0067b8;
+$twitter-color: #1da1f2;
+$linkedin-color: #0073b1;
+$star-rating: #F0C744;
+
+
+$color-cyan: #26c5da;
+$color-blue: #2196F3;
+$color-light-blue: #03A9F4;
+$color-purple: #9C27B0;
+$color-deep-purple: #673AB7;
+$color-teal: #009688;
+$color-green: #4CAF50;
+$color-light-green: #8BC34A;
+$color-lime: #CDDC39;
+$color-pink: #E91E63;
+$color-indigo: #3F51B5;
+$color-orange: #FF9800;
+$color-deep-orange: #FF5722;
+$color-blue-grey: #607D8B;
+$color-yellow: #FFEB3B;
+$color-amber: #FFC107;
+$color-red: #F44336;
+$color-brown: #795548;
+$color-grey: #9E9E9E;
+$color-bright-green: #67F196;
+
+
+
+/*
+//Cyan
+$theme-color-primary: #26c5da !default; 
+//Teal
+$theme-color-primary: #009688 !default; 
+//Green
+$theme-color-primary: #4CAF50 !default; 
+//Purple
+$theme-color-primary: #9c27b0 !default; 
+//Orange
+$theme-color-primary: #FF9800 !default;
+//Pink
+$theme-color-primary: #E91E63 !default;
+*/
+
+
+// Theme styles
+@import "styles";
+
+
+

@@ -1,0 +1,37 @@
+{{#usepromoblocks}}
+<!-- ******PROMO BLOCKS****** --> 
+<div class="promo-section">
+    <div class="container">
+        <div class="row">
+            {{#promoblocks}}
+            {{#hasitem}}
+            <div class="item item-{{{itemcount}}} col-lg-6 col-12">
+                <div class="item-inner">
+                    <div class="content-holder">
+                        <div class="text-holder">
+                            {{#promotitle}}
+                            <h4 class="promo-title">{{{promotitle}}}</h4>
+                            {{/promotitle}}
+                            {{#promocontent}}
+                            <div class="intro">
+                                {{{promocontent}}}
+                            </div><!--//intro-->
+                            {{/promocontent}}
+                        </div><!--//text-holder-->
+                    </div><!--//content-holder-->
+                    {{#promoimage}}
+                    <div class="thumb-holder">    
+                    </div><!--//thumb-holder-->
+                    {{/promoimage}}
+                    {{#promourl}}
+                    <a class="link" href="{{{promourl}}}"></a>
+                    {{/promourl}}
+                </div><!--//item-innder-->
+            </div><!--//item-->
+           {{/hasitem}}
+           {{/promoblocks}}
+            
+        </div><!--//row-->
+    </div><!--//container-->
+</div><!--//promo-section-->
+{{/usepromoblocks}}
