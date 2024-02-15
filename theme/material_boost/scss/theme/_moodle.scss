@@ -2141,13 +2141,13 @@ body#page-enrol-index #region-main .generalbox:last-of-type {
 	height: inherit;
 	border: none;
 	background: none;
-	font-weight: 700;
-	color: rgba(256, 256, 256, 0.7);
+	font-weight: 400;
+	color: #303030;
 	&.active, &:hover {
 		border: none;
 		background: none;
-		color: #fff;
-		font-weight: 700;
+		color: #3a3a3a;
+		font-weight: 400;
 		background: none;
 	}
 }
@@ -2445,10 +2445,11 @@ body#page-enrol-index #region-main .generalbox:last-of-type {
 }
 
 #page-site-index .coursebox {
-	border:none;
-	border-bottom: 1px solid $theme-divider-color;
+	// border:none;
+	border: 1px solid #303030;
+	// border-bottom: 1px solid $theme-divider-color;
 	&:last-child {
-		border-bottom: none;
+		border-bottom: 1px solid #303030;
 	}
 }
 

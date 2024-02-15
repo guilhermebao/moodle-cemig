@@ -102,15 +102,18 @@
         overflow: hidden;
         position: absolute;
         right: 15px;
-        top: 20px;
-        font-size: 16px;
+        top: 40px;
+        font-size: 22px;
+		color: #303030;
+		line-height: 36px;
         .item {
             display: inline-block;
             float: left;
-            margin-right: 15px;
-            color: #fff;
+            margin-right: 22px;
+			font-weight: 500;
+            color: #303030;
             a {
-	            color: #fff;
+	            color: #303030;
             }
             .fa {
                 margin-right: 5px;
@@ -123,6 +126,17 @@
             }
         }
     }
+
+	.add-menu {
+		color: #303030;
+	}
+
+	.search-input-course {
+		border-radius: 25px;
+    	border: 1px solid #ccc;
+    	padding: 13px;
+		width: 40%;
+	}
     
 	
 	.social-media-list {
@@ -350,7 +364,7 @@
 	.branding {
 		padding-top: 30px;
 		padding-bottom: 30px;
-		background: $theme-color-primary;
+		background: rgb(255, 255, 255);
 		.site-logo-wrapper {
 			display:inline-block;
 		}
@@ -439,7 +453,7 @@
 
 .main-nav-wrapper {
 	
-	background: darken($theme-color-primary, 2.5%);
+	background: #fff;
 	
 	.main-nav {
 		

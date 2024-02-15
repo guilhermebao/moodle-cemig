@@ -462,7 +462,8 @@ body.pagelayout-frontpage {
 
 #frontpage-course-list {
 	&>h2 {
-		background: $color-blue;
+		background: transparent;
+        
 	}
 }
 
@@ -523,8 +524,10 @@ body.pagelayout-frontpage {
     #frontpage-available-course-list > h2, #frontpage-course-list > h2, #frontpage-category-names > h2, #frontpage-course-list > h2, #frontpage-category-combo > h2, #site-news-forum > h2 {;
 	    padding: 15px;
 	    text-align: center;
-		font-size: 18px !important;
-		color: #fff;
+		// font-size: 18px !important;
+		// color: #fff;
+        color: #303030;
+        font-size: 40px;
 	}
 }
 
