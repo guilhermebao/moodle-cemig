@@ -31,6 +31,12 @@
       <label for="searchinput-{{uniqid}}">
         <span class="sr-only">{{#str}} search, core {{/str}}</span>
       </label>
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary search-icon">
+          {{#pix}} a/search, core {{/pix}}
+          <span class="sr-only">{{#str}} search, core {{/str}}</span>
+        </button>
+      </div>
       <input type="text"
              id="searchinput-{{uniqid}}"
              class="form-control"
@@ -41,12 +47,7 @@
              autocomplete="off"
              {{#query}}value="{{.}}"{{/query}}
       >
-      <div class="input-group-append">
-        <button type="submit" class="btn btn-primary search-icon">
-          {{#pix}} a/search, core {{/pix}}
-          <span class="sr-only">{{#str}} search, core {{/str}}</span>
-        </button>
-      </div>
+      
     </div>
   </form>
 </div>

@@ -1500,13 +1500,17 @@ span[data-region="favourite-icon"] .icon{
 
 .card.dashboard-card {
 	//@extend %card-box-shadow;
-	border: 1px solid $theme-border-color;
+	border: 1px solid #303030;
+	border-radius: 8px;
 }
 
 .card-img.dashboard-card-img {
 	@include border-radius(0);
 }
 
+.text-card {
+	color: #303030;
+}
 
 
 //dropdown buttons
@@ -2912,3 +2916,10 @@ button[data-filteraction="remove"] {
 
 }
 
+.card-title-custom {
+	color: #303030 !important; 
+    background: transparent !important;
+	font-weight: 700;
+	font-size: 40px !important;
+	padding: 0px !important;
+}

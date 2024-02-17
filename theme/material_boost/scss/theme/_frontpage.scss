@@ -12,6 +12,13 @@ body.pagelayout-frontpage {
      margin-bottom: 45px;
 }
 
+.hero-title {
+    font-size: 27px;
+    font-weight: 700;
+    color: #303030;
+    margin-top: 15px;
+}
+
 .bg-slider-wrapper {
     content: "";
     position: absolute;
@@ -78,10 +85,11 @@ body.pagelayout-frontpage {
             
             .slide-content-inner {
                 position: absolute;
-                left: 15px;
+                left: 15%;
                 top: 60px;
                 padding: 30px;
-                width: 420px;
+                width: 810px;
+                height: 320px;
                 background: #fff;
                 @include border-radius(2px);
             }
@@ -436,8 +444,8 @@ body.pagelayout-frontpage {
 
 #frontpage-available-course-list, #frontpage-category-names, #site-news-forum, #frontpage-category-combo, #frontpage-course-list, .pagelayout-frontpage .generalbox.sitetopic{
 	margin-bottom: 45px;
-	border: 1px solid $theme-border-color;
-	@extend %card-box-shadow;
+	// border: 1px solid $theme-border-color;
+	// @extend %card-box-shadow;
 	
 	&>h2 {
 		padding: 15px;
